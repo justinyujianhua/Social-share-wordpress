@@ -1,0 +1,27 @@
+ <!-- sample modal content -->
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">分享到社交网络</h4>
+          </div>
+          <div class="modal-body">
+             <a target="_blank" rel="nofollow" href="http://www.douban.com/recommend/?url=<?php the_permalink(); ?>&title=<?php the_title(''); ?>" class="douban-share" title="豆瓣"><img src="社交图标链接地址"></a>   
+             <a target="_blank" rel="nofollow" href="http://v.t.sina.com.cn/share/share.php?appkey=3408168656&url=<?php the_permalink(); ?>&title=<?php the_title(''); ?>" class="sina-share" title="新浪微博"><img src="社交图标链接地址"></a>   
+          </div>
+         <!--  <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <a href="main2.html"><button type="button" class="btn btn-primary">确认</button></a>
+          </div>
+ -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="bs-example" style="padding-bottom: 24px;">
+      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+         分享
+      </button>
+    </div><!-- /example -->
